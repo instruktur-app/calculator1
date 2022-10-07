@@ -61,6 +61,5 @@ console.log(penjumlahan(10, 20));
 console.log("hasil pengurangan dari " + A + " dan " + B + " adalah " + kurang);
 console.log(perkalian(10, 5));
 console.log(penjumlahan_menurun(-5));
-
 console.log(cekBilangan(0));
 console.log(cekGanjilGenap("a"));
