@@ -43,6 +43,12 @@ function cekBilangan(bilangan){
     return `${bilangan} bukan number`
 }
 
+function cekGanjilGenap(bilangan){
+  if(typeof bilangan != 'number'){
+    return `${bilangan} bukan number`
+  }
+  return bilangan % 2 == 0
+}
 
 const perkalian = (bilanganA, bilanganB) => bilanganA * bilanganB;
 
@@ -57,3 +63,4 @@ console.log(perkalian(10, 5));
 console.log(penjumlahan_menurun(-5));
 
 console.log(cekBilangan(0));
+console.log(cekGanjilGenap("a"));
