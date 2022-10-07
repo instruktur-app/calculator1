@@ -1,4 +1,10 @@
 function penjumlahan (bilanganA,bilanganB) {
+    if(typeof bilanganA != "number"){
+        return  bilanganA+"bukan number"
+    }
+    else if(typeof bilanganB != "number"){
+        return bilanganB+"bukan number"
+    }
     return bilanganA + bilanganB    
 }
 
