@@ -8,6 +8,11 @@ function penjumlahan(bilanganA, bilanganB) {
 }
 
 function penjumlahan_menurun(bilangan) {
+    if(typeof bilangan != 'number') {
+        return `${bilangan} bukan number`
+    } else if (bilangan <= 0) {
+        return `${bilangan} wajib positif`
+    }
   var hasil = 0;
   for (let i = bilangan; i > 0; i--) {
     hasil += i;
@@ -35,4 +40,4 @@ console.log(penjumlahan(10, 20));
 
 console.log("hasil pengurangan dari " + A + " dan " + B + " adalah " + kurang);
 console.log(perkalian(10, 5));
-console.log(penjumlahan_menurun(3));
+console.log(penjumlahan_menurun(-5));
