@@ -30,6 +30,20 @@ function pengurangan(bilanganA, bilanganB) {
   return bilanganA - bilanganB;
 }
 
+function cekBilangan(bilangan){
+    if(typeof bilangan === 'number'){
+        if(bilangan >0){
+            return `${bilangan} bilangan positif`
+        }else if(bilangan === 0){
+            return `${bilangan} bilangan nol`
+        }else{
+            return `${bilangan} bilangan negatif`
+        }
+    }
+    return `${bilangan} bukan number`
+}
+
+
 const perkalian = (bilanganA, bilanganB) => bilanganA * bilanganB;
 
 var A = 99;
@@ -41,3 +55,5 @@ console.log(penjumlahan(10, 20));
 console.log("hasil pengurangan dari " + A + " dan " + B + " adalah " + kurang);
 console.log(perkalian(10, 5));
 console.log(penjumlahan_menurun(-5));
+
+console.log(cekBilangan(0));
